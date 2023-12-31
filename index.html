@@ -30,7 +30,7 @@
         let timeOutid = 0
         
     function rdlyrics(){
-        setTimeout(() => {
+        timeOutid = setInterval(() => {
         let lyricNum = lyrics.length
         let lyricRan = Math.floor(Math.random()*lyricNum)
         let lyricto = lyrics[lyricRan]
