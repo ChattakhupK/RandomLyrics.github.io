@@ -13,6 +13,7 @@
                 <h2 class="text-white">Random Song Lyrics</h2>
               <p id="lyrics-song" class="d-block text-danger">Please wait a moment.</p>
               <input id="clicker" class="btn btn-primary" type="submit" value="Submit">
+              <input id="stop-btn" class="btn btn-danger" type="reset" value="Stop">
             </div>
           </div>
       </div>
@@ -25,7 +26,9 @@
         'รู้มั้ยฉันโคตรอิจฉาที่เธอรักเขา รู้มั้ยฉันโคตรอิจฉาที่เธอมีแต่เขา','เปรียบเธอเป็นดอกไม้ และฉันเป็นแจกัน<br>มันทำให้ฉันมีความหมาย คอยช่วยดูแลกัน'
     ,'แค่ได้พบสบตากัน เพียงเท่านั้นเหมือนฉันรักเธอมาแสนนาน<br>เฝ้าห่วงหาอาวรณ์ถึงเธอ','ไม่อยากเป็นแล้วเด็กเอ๋ยเด็กดี ขอลองเป็นเด็กพี่ได้มั้ย<br>เบื่อแล้วพี่น้องอยากลองเป็นหวานใจ ก็พี่น่ารักไม่ไหว'
 ,'เพราะว่าฉันชอบเธอไม่ใช่น้อย เจอเธอก็เลยเป็นคนพูดน้อย<br>เธอทำฉันพูดไม่ออกรู้ไหม สติค่อยๆหลุดลอยหายไป']
-    
+        let btnStop = document.getElementById('stop-btn')
+        let timeOutid = 0
+        
     function rdlyrics(){
         setTimeout(() => {
         let lyricNum = lyrics.length
